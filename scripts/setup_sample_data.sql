@@ -106,14 +106,7 @@ Insert into EMPLOYEES
    (105, 'David', 'Austin', 'DAUSTIN', '590_423_4569', 
     TO_DATE('06/25/2005 00:00:00', 'MM/DD/YYYY HH24:MI:SS'), 'IT_PROG', 6816, NULL, 103, 
     60, 110880, NULL, NULL, NULL);
-Insert into EMPLOYEES
-   (EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, 
-    HIRE_DATE, JOB_ID, SALARY, COMMISSION_PCT, MANAGER_ID, 
-    DEPARTMENT_ID, RETIRED_BONUS, RETIRED, CONTRACT_DATE, AGE)
- Values
-   (106, 'Valli', 'Pataballa', 'VPATABAL', '590_423_4560', 
-    TO_DATE('02/05/2006 00:00:00', 'MM/DD/YYYY HH24:MI:SS'), 'IT_PROG', 5760, 0.1, 103, 
-    60, NULL, NULL, NULL, NULL);
+
     
 -- Insert into REGIONS
 Insert into REGIONS
@@ -161,20 +154,8 @@ Insert into COUNTRIES
    (COUNTRY_ID, COUNTRY_NAME, REGION_ID)
  Values
    ('CN', 'China', 3);
-Insert into COUNTRIES
-   (COUNTRY_ID, COUNTRY_NAME, REGION_ID)
- Values
-   ('DE', 'Germany', 1);
-Insert into COUNTRIES
-   (COUNTRY_ID, COUNTRY_NAME, REGION_ID)
- Values
-   ('DK', 'Denmark', 1);
-Insert into COUNTRIES
-   (COUNTRY_ID, COUNTRY_NAME, REGION_ID)
- Values
-   ('EG', 'Egypt', 4);
-Insert into COUNTRIES
-   (COUNTRY_ID, COUNTRY_NAME, REGION_ID)
+
+
 
 -- Insert into LOCATIONS
 
@@ -214,18 +195,7 @@ Insert into LOCATIONS
  Values
    (1300, '9450 Kamiya-cho', '6823', 'Hiroshima', NULL, 
     'JP');
-Insert into LOCATIONS
-   (LOCATION_ID, STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, 
-    COUNTRY_ID)
- Values
-   (1400, '2014 Jabberwocky Rd', '26192', 'Southlake', 'Texas', 
-    'US');
-Insert into LOCATIONS
-   (LOCATION_ID, STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, 
-    COUNTRY_ID)
- Values
-   (1500, '2011 Interiors Blvd', '99236', 'South San Francisco', 'California', 
-    'US');
+
 -- Insert into departments
 Insert into DEPARTMENTS
    (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
@@ -295,16 +265,5 @@ Insert into DEPARTMENTS
    (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
  Values
    (170, 'Manufacturing', NULL, 1700);
-Insert into DEPARTMENTS
-   (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
- Values
-   (180, 'Construction', NULL, 1700);
-Insert into DEPARTMENTS
-   (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
- Values
-   (190, 'Contracting', NULL, 1700);
-Insert into DEPARTMENTS
-   (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
- Values
-   (200, 'Operations', NULL, 1700);
+
 COMMIT;
